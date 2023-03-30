@@ -11,6 +11,11 @@
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
                 </div>
+
+                <div>
+                    <livewire:post-editor></livewire:post-editor>
+                </div>
+
             </div>
         </div>
     </div>
