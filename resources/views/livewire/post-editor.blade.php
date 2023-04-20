@@ -43,15 +43,14 @@
                 Result <br><br><br>
             </div>
             <div class="select-all">
-
                 {{ $salutation }} <br><br>
                 🚀 {{ $title }} <br><br>
                 {{ $body }} <br><br>
                 <ul>
                     @foreach($this->displayTimezones as $timezone)
-                        <li>
-                            <span class="w-[100px]"> {{ $timezone['text'] }}</span>
-                            <span> {{ now()->tz($timezone['timezone'])->format('g:i a') }}</span>
+                        <li wire:key="timezone-{{ $timezone['text'] }}">
+                            <span class="w-[100px]">{{ $timezone['text'] }}</span>
+                            <span>{{ now()->tz($timezone['timezone'])->format(': g:i a') }}</span>
                         </li>
                     @endforeach
                 </ul>
@@ -59,7 +58,7 @@
                 <br>
                 Link 👇<br>
                 🎥 {{ $link }}
-
-            </div></div>
+            </div>
+        </div>
     </div>
 </div>

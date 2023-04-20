@@ -34,5 +34,6 @@
             </main>
         </div>
         @livewireScripts
+        @stack('alpine-components')
     </body>
 </html>
