@@ -16,7 +16,7 @@
         @vite([
             'resources/css/app.css',
             'resources/js/app.js',
-            'resources/js/todo-list/todo-list.js'
+            'resources/js/todo-list/index.js'
         ])
     </head>
     <body class="font-sans antialiased">
