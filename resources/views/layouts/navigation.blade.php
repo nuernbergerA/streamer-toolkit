@@ -15,6 +15,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('alpine-example')" :active="request()->routeIs('alpine-example')">
+                        {{ __('Alpine Example') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('alpine-vue-example')" :active="request()->routeIs('alpine-vue-example')">
+                        {{ __('Alpine-Vue Example') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -69,6 +75,12 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('alpine-example')" :active="request()->routeIs('alpine-example')">
+                {{ __('Alpine Example') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('alpine-vue-example')" :active="request()->routeIs('alpine-vue-example')">
+                {{ __('Alpine-Vue Example') }}
             </x-responsive-nav-link>
         </div>
 

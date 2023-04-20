@@ -12,7 +12,7 @@
                     {{ __("You're logged in!") }}
                 </div>
 
-                <div>
+                <div class="p-6">
                     <livewire:post-editor></livewire:post-editor>
                 </div>
 
