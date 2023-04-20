@@ -13,6 +13,8 @@
                 <x-counter counter="5"/>
                 <x-counter counter="1"/>
 
+                <livewire:visits-counter />
+
             </div>
         </div>
     </div>
